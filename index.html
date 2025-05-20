@@ -155,4 +155,13 @@
     </div>
   </footer>
 </body>
+<script>
+  window.addEventListener('load', () => {
+    const video = document.querySelector('video');
+    if (video) {
+      video.currentTime = 0;
+      video.play();
+    }
+  });
+</script>
 </html>
