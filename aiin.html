@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asian Indigenous International Network</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-MW8zW7cBZ9GkV3smAGPUNuZ3K7K6epmsC+DQmsVZ+q8AyWBK7/VfE84eMvz+1WzBGZ/0gY6N+l2gF/Sbdgx2Gw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+          <div class="logo-title">
+            <img src="logo.aiin.png" alt="AIIN Logo" class="logo" />
+            <div class="title-info">
+              <h1>Asian Indigenous International Network</h1>
+              <p class="contact-info">
+                <i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal, GPO Box: 9774 &nbsp;
+                <i class="fas fa-phone"></i> +977-16200328 &nbsp;
+                <i class="fas fa-envelope"></i> indigenous.asia@gmail.com
+              </p>
+            </div>
+          </div>
+            <nav>
+              <ul>
+                <li><a href="aiin.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="what-we-do.html">What We Do</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+  <main>
+    <section class="hero-video-section">
+      <video autoplay muted loop playsinline class="hero-bg-video">
+        <source src="AIIN Video - Made with Clipchamp.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Empowering Indigenous Communities</h1>
+          <p>Together we promote equity, sustainability, and cultural strength.</p>
+          <a href="what-we-do.html" class="hero-button">Learn More</a>
+        </div>
+      </div>
+    </section>      
+
+    <section id="Discover-aiin" style="background-color: #f9f9f9; padding: 60px 20px;">
+      <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+        
+        <!-- Text Content -->
+        <div style="flex: 1 1 500px;">
+          <h2 style="color: #003366; font-size: 32px; margin-bottom: 20px;">
+            Discover more about Asian Indigenous International Network
+          </h2>
+          <p style="font-size: 16px; color: #333; line-height: 1.7;">
+            Asian Indigenous International Network (AIIN) is a regional, non-governmental organization dedicated to promoting the rights, dignity, and development of indigenous communities across Asia. We work to ensure that indigenous peoples are heard, respected, and empowered in every aspect of society.
+            <br><br>
+            Our mission is to protect indigenous identities, support cultural preservation, and foster opportunities for education, leadership, and sustainable development. Through collaboration, advocacy, and capacity-building, we strive to strengthen indigenous participation in decision-making and policy processes.
+            <br><br>
+            AIIN is built on the foundation of unity, inclusion, and justice. Our network brings together activists, advisors, legal experts, and community leaders to advocate for indigenous peoples' rights and to promote positive change within communities.
+            <br><br>
+            We envision a future where indigenous voices are central to building inclusive, equitable, and resilient societies.
+          </p>
+          <br>
+          <a href="opportunities.html" class="Discover-button">Discover</a>
+        </div>
+    
+        <!-- Image Slider -->
+        <div class="aiin-image-slider">
+          <div class="slider-wrapper">
+            <img src="AIIN Hero Scetion.jpeg" class="slider-image active" alt="About AIIN Image 1">
+            <img src="About 4.jpeg" class="slider-image" alt="About AIIN Image 2">
+          </div>
+          <div class="slider-buttons">
+            <button onclick="prevImage()">&#10094;</button>
+            <button onclick="nextImage()">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+      <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.slider-image');
+      
+        function showImage(index) {
+          images.forEach((img, i) => {
+            img.classList.toggle('active', i === index);
+          });
+        }
+        function prevImage() {
+          currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+          showImage(currentIndex);
+        }
+      
+        function nextImage() {
+          currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+          showImage(currentIndex);
+        }
+        setInterval(() => {
+          nextImage();
+        }, 3000);
+      </script>
+    
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal, GPO Box: 9774</p>
+        <p><i class="fas fa-phone"></i> +977-1234567</p>
+        <p><i class="fas fa-envelope"></i> abcd@gmail.com</p>
+        <p>Reg. No: 123456/987/098 - Govt of Nepal, Ministry of Industry, OCR</p>
+      </div>
+      <div class="footer-right">
+        <br>
+        <h4>Follow Us On:</h4>
+      <div class="footer-icons">
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank" title="Instagram">
+                <img src="https://img.icons8.com/ios-filled/50/003366/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                <img src="https://img.icons8.com/ios-filled/50/003366/linkedin-circled.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" title="facebook">
+                <img src="https://img.icons8.com/ios-filled/50/003366/facebook.png" alt="GitHub">
+            </a>
+            <a href="https://twitter.com" target="_blank" title="Twitter">
+                <img src="https://img.icons8.com/ios-filled/50/003366/twitter.png" alt="Twitter">
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Asian Indigenous International Network. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
